@@ -1,0 +1,128 @@
+$primary:#3292a6;
+$primary-overlay: rgba(50,146,166,0.8);
+
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    opacity: 0.9;
+    background-color: white;
+    .nav-item{
+        font-size: 1rem;
+        padding-right: 1.4rem;
+    }
+}
+
+#showcase{
+    position: relative;
+    min-height: 600px;
+    background: url('/images/mountains.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    .row{
+        margin-top: 70px;
+    }
+    .content-overlay{
+        background: $primary-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .showcase-img{
+        width:80%;
+    }
+    .showcase-content{
+        align-items: center;
+        color: white;
+    }
+}
+
+#boxes{
+    .card{
+        border: 1px solid $primary;
+    }
+    .card-body{
+        text-align: center;
+    }
+}
+
+#whybook{
+    .why-title{
+        border-bottom: 1px solid $primary;
+        max-width: 700px;
+    }
+    h1{
+        margin: 30px 0;
+    }
+    h5{
+        margin-bottom: 30px;
+    }
+    .card-header{
+        height: 50px;
+    }
+}
+
+#author-img{
+    .author-title{
+        border-bottom: 1px solid $primary;
+        max-width: 700px;
+    }
+    h1{
+        margin: 30px 0;
+    }
+    h5{
+        margin-bottom: 30px;
+    }
+    .card{
+        margin-top: 100px;
+    .card-img{
+        margin-top: -75px;
+        text-align: center;
+        .auth-imgs{
+            width: 50%;
+            margin: auto;
+        }
+
+    }
+    &:hover{
+        color: white;
+        background-color: $primary;
+    }
+
+}
+}
+
+
+@media(max-width:780px){
+    #showcase{
+        min-height: 500px;
+        h1{
+            font-size:3rem;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+    }
+    #boxes{
+        .card{
+            margin-top:2rem !important;
+            margin-bottom:1rem !important;
+        }
+        .card-body{
+            text-align: center;
+        }
+        
+    }
+    .img-fluid{
+        margin: 0px auto !important;
+        width: 70% !important;
+    }
+    .footer{
+        .m-5{
+            margin: 1rem !important;
+        }
+    }
+    
+}

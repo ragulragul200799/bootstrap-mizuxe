@@ -1,0 +1,85 @@
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+  background-color: white; }
+  .navbar .nav-item {
+    font-size: 1rem;
+    padding-right: 1.4rem; }
+
+#showcase {
+  position: relative;
+  min-height: 600px;
+  background: url("/images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed; }
+  #showcase .row {
+    margin-top: 70px; }
+  #showcase .content-overlay {
+    background: rgba(50, 146, 166, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  #showcase .showcase-img {
+    width: 80%; }
+  #showcase .showcase-content {
+    align-items: center;
+    color: white; }
+
+#boxes .card {
+  border: 1px solid #3292a6; }
+#boxes .card-body {
+  text-align: center; }
+
+#whybook .why-title {
+  border-bottom: 1px solid #3292a6;
+  max-width: 700px; }
+#whybook h1 {
+  margin: 30px 0; }
+#whybook h5 {
+  margin-bottom: 30px; }
+#whybook .card-header {
+  height: 50px; }
+
+#author-img .author-title {
+  border-bottom: 1px solid #3292a6;
+  max-width: 700px; }
+#author-img h1 {
+  margin: 30px 0; }
+#author-img h5 {
+  margin-bottom: 30px; }
+#author-img .card {
+  margin-top: 100px; }
+  #author-img .card .card-img {
+    margin-top: -75px;
+    text-align: center; }
+    #author-img .card .card-img .auth-imgs {
+      width: 50%;
+      margin: auto; }
+  #author-img .card:hover {
+    color: white;
+    background-color: #3292a6; }
+
+@media (max-width: 780px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 3rem;
+      margin-bottom: 10px; }
+    #showcase p {
+      font-size: 1rem;
+      margin-bottom: 10px; }
+
+  #boxes .card {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important; }
+  #boxes .card-body {
+    text-align: center; }
+
+  .img-fluid {
+    margin: 0px auto !important;
+    width: 70% !important; }
+
+  .footer .m-5 {
+    margin: 1rem !important; } }
